@@ -1,0 +1,84 @@
+{
+  "name": "template1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service build  --mode test",
+    "lint": "vue-cli-service lint",
+    "lintconfig": "eslint .",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "core-js": "^3.6.5",
+    "datef": "^3.0.0",
+    "element-ui": "^2.15.2",
+    "package-auto-manageconsole": "git+https://github.com/MrWangQAQ/package-auto-manageconsole.git",
+    "qs": "^6.10.1",
+    "sass-loader": "^10.1.1",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.11.2",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1",
+    "xlsx": "^0.17.0"
+  },
+  "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "^3.7.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^8.2.1",
+    "node-sass": "^4.12.0",
+    "prettier": "2.3.2",
+    "vue-cli-plugin-i18n": "^0.6.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "author": " 张兵根 zhangbinggen@oppo.com",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": [
+      "npm run prettier",
+      "npm run lintconfig",
+      "git add ."
+    ]
+  }
+}

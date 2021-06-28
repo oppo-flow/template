@@ -1,0 +1,45 @@
+/**
+ * 公共按钮样式
+ */
+.g-btn-blue,
+.g-btn-grey{
+  line-height: 32px;
+  height: 32px;
+  border-radius: 4px;
+  min-width: 76px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 24px;
+}
+
+a.g-btn-blue,
+a.g-btn-grey{
+  text-decoration: none;
+}
+
+
+.g-btn-blue{
+  background-color: #00C00E;
+  color: #FFFFFF;
+  border: 0;
+
+  &:hover{
+    opacity: .5;
+  }
+
+  &.disabled, &:disabled{
+    opacity: .5;
+  }
+}
+
+.g-btn-grey{
+  border: solid 1px #CDCFD1;
+  background-color: #FFFFFF;
+  color: #323233;
+  &:hover{
+    border-color: #06CB44;
+    color: #06CB44;
+  }
+}

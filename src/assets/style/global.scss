@@ -1,0 +1,47 @@
+@import "./media.scss";
+@import "./vars.scss";
+@import "./common.scss";
+@import "./theme.scss";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, textarea{
+	padding: 0;
+	margin: 0;
+};
+address, cite, dfn, em, var, i {
+	font-style: normal;
+}
+
+html, body {
+	height: 100%;
+	width :100%;
+	padding: 0;
+	margin :0;
+	overflow :hidden;
+}
+
+body {
+	font-size :12px; /*no*/
+}
+
+img, fieldset {
+	border: none;
+};
+:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	background: none
+}
+
+ul, li {
+	list-style: none;
+}
+
+//.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear {
+	clear: both;
+}
+

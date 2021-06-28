@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.options": {
+    //指定vscode的eslint所处理的文件的后缀
+    "extensions": [".js", ".vue", ".ts", ".tsx"]
+  }
+}
